@@ -71,3 +71,55 @@ justify-content: space-between;
 .Active{
   background-color: green;
 }
+.container{
+  display: flex;
+  margin-top: 30px;
+  width: 300px;
+  height: 80px;
+  background-color:#2f3337;
+  border-radius: 15px;
+}
+.initial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7f2b6f;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  color: aliceblue;
+  background-image: -moz-linear-gradient(black);
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.information{
+font-size: 7px;
+color: lightgray;
+margin-left: 10px;
+
+
+
+
+}
+.fullName{
+  color: aliceblue;
+  /* font-size: larger; */
+}
+.tic-tac-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  background-color: darkgray
+}
+.tic-tac-button{
+  width: 33%;
+  height: 33%;
+  font-size: 80px;
+  color: #7f2b6f;
+  background-color: pink;
+  
+}
+.tic-tac-button :hover{
+  background-color: aliceblue;
+}

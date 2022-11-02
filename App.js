@@ -19,19 +19,24 @@
 
 // export default App;
 import "./App.css";
-import ProfileCard from "./profile-card/profile-card-parent";
+// import ProfileCard from "./profile-card/profile-card-parent";
 // import NameField from "./name-field/name-field-parent"
 // import Airbnb from "./airbnb/parent";
 // import DemoUses from "./component/useState-demo";
 // import DemoUseState from "./component/useState-demo/object-example";
 // import Fireworks from "./fireworks/fireworks";
 // import Counter from "./counter-example/counter-example";
-import Status from "./status-picker/status-picker";
-import Language from "./language-picker/language-picker";
+// import Status from "./status-picker/status-picker";
+// import Language from "./language-picker/language-picker";
 // import DemoUsesStates from "./component/useState-demo";
 // import DemoUseState from "./component/useState-demo/object-example";
-// import ToDoList from "./to-do-list/parent";
-import CarOwnerParent from "./car-owners-props/parent";
+import ToDoList from "./to-do-list/parent";
+// import CarOwnerParent from "./car-owners-props/parent";
+// import DataManupilationEx from "./sample-data/sample-data";
+// import RatingStar from "./star-ratings/star-rating";
+import ControlledComp from "./controlled-comp/controlled-comp";
+import TicTacToe from "./tic-tac-toe/tic-tac-toe";
+
 
 
 function App() {
@@ -44,9 +49,14 @@ function App() {
       {/* <Fireworks /> */}
       {/* <Counter/> */}
       {/* <Status /> */}
-      <Language />
+      {/* <Language /> */}
       {/* <NameField /> */}
       {/* <ProfileCard /> */}
+      {/* <DataManupilationEx /> */}
+      {/* <RatingStar /> */}
+      <TicTacToe />
+     {/* <ControlledComp /> */}
+      
     
     </div>
   );

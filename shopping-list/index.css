@@ -1,0 +1,58 @@
+.best-buy-shopping-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 65%;
+    
+    
+}
+.best-buy-picture{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 120px;
+    height: 120px;
+    margin: -5px 0 0 0;
+    
+  
+}
+.best-buy-movie-detail{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 15px;
+    
+
+}
+.shopping-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.shopping-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  background-color: #fff000;
+  border: #fff000;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 180px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+    
+}

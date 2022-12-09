@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {AiFillStar, AiOutlineStar} from 'react-icons/ai'
 
 
+
 export default function RatingStar(){
     const [rate,setRate]= useState(0)
     return(

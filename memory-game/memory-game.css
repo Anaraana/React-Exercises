@@ -1,0 +1,30 @@
+.memory-container{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    background-color: darkgray;
+    margin-left: 20%;
+
+
+  }
+  .memory-button{
+    margin-top: auto;
+    width: 25%;
+    height: 25%;
+    font-size: 40px;
+    color: #072760;
+    background-color:#ffdc5e;
+    cursor: pointer;
+  
+  }
+  .memory-game-big-container{
+    width: 1000px;
+    height: 1000px;
+    background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #fdeff9 100%);
+  }
+  .memory-game-name-style{
+    color: #633656;
+  }
+

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './tic-tac-toe.css' 
 
 const WinnerChance = [
   [0, 1, 2],
@@ -13,16 +14,19 @@ const WinnerChance = [
 const TicTacToe = () => {
   const [currSymbol, setCurrSymbol] = useState(firstSymbol);
   const [clickedTiles, setclickedTiles] = useState({});
-  const [isWin, setIsWin]= useState(false);
+  const [isWin, setIsWin] = useState(false);
   return (
     <div className="big-container">
-      <button onClick={()=>{
-        setIsWin(false)
-    setCurrSymbol(firstSymbol)
-    setclickedTiles ({})
-    
-       } }>Restart</button>
-       <div>{isWin ? "Win" : ""}</div>
+      <button
+        onClick={() => {
+          setIsWin(false);
+          setCurrSymbol(firstSymbol);
+          setclickedTiles({});
+        }}
+      >
+        Restart
+      </button>
+      <div>{isWin ? "Win" : ""}</div>
       <div className="tic-tac-container">
         {[...Array(9)].map((tile, tileLoc) => {
           return (
@@ -32,16 +36,21 @@ const TicTacToe = () => {
               onClick={() => {
                 // if the tile has X or O, do not do nothing
                 if (clickedTiles[tileLoc] || isWin) return;
-                const tileDataTemp= {...clickedTiles, [tileLoc]: currSymbol }
+                const tileDataTemp = { ...clickedTiles, [tileLoc]: currSymbol };
                 console.log(clickedTiles);
-                setclickedTiles(tileDataTemp)
+                setclickedTiles(tileDataTemp);
                 const currSymbolLoc = Object.keys(tileDataTemp).filter(
-                  (key)=> tileDataTemp[key]===currSymbol);
-                  WinnerChance.forEach((winCh)=>{
-                   if(winCh.every((element)=>currSymbolLoc.includes(element.toString()))){
-                    setIsWin(true)
-                   } 
-                  })
+                  (key) => tileDataTemp[key] === currSymbol
+                );
+                WinnerChance.forEach((winCh) => {
+                  if (
+                    winCh.every((element) =>
+                      currSymbolLoc.includes(element.toString())
+                    )
+                  ) {
+                    setIsWin(true);
+                  }
+                });
 
                 setCurrSymbol((currState) => {
                   return currState === symbolA ? symbolB : symbolA;
@@ -60,4 +69,5 @@ const TicTacToe = () => {
 const symbolA = "X";
 const symbolB = "O";
 const firstSymbol = symbolA;
-export default TicTacToe;
+
+export default TicTacToe

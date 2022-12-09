@@ -1,0 +1,9 @@
+.Away{
+  background-color: yellow;
+}
+.Offline{
+  background-color: red;
+}
+.Active{
+  background-color: green;
+}

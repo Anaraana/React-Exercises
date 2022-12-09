@@ -1,0 +1,22 @@
+.toDoListContainer{
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 600px;
+  height: 800px;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+  background-color: rgb(234, 224, 242);
+}
+.smallContainer{
+    border: 1px solid darkgray;
+    background-color: #efe9f3;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    box-shadow: #2f3337;
+  } 

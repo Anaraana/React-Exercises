@@ -1,0 +1,11 @@
+.edit-button{
+    width: 40px;
+    color: blue;
+}
+.delete-button{
+    width: 40px;
+    color:red
+}
+.dob{
+    width: 100px;
+}

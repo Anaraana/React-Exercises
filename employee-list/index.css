@@ -1,0 +1,49 @@
+.body-employee{
+    background-color:#f5ebe0;
+    width: 1200px;
+    height: 1200px;
+    border: 1px solid brown;
+    border-radius: 10px;
+    padding: 20px;
+}
+.employees{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.employee-card-container{
+    display: flex;
+    background-color: #d6ccc2;
+    border: 1px solid black;
+    width: 300px;
+    height: 500px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-right: 20px;
+}
+.employee-detail{
+    width: 300;
+    height: auto;
+    border: 3px;
+    border-radius: 15px;
+    
+    margin-top: 10px;
+    align-self: center;
+}
+.employee-card{
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.form-container{
+    width: 900px;
+   
+   
+    display: flex;
+    flex: wrap;
+}
+
+

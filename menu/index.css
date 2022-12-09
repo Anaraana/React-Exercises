@@ -1,0 +1,19 @@
+.project-layout-container{
+    background-color:#f8f7ff;
+}
+
+
+.main-page{
+    display: flex;
+}
+.menu-buttons-main{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+/* button{
+    margin-top: 30px;
+    width: 100px;
+  border-radius: 10px;
+
+} */

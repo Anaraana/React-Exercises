@@ -1,0 +1,15 @@
+.language-container {
+ 
+  padding: 10px;
+}
+.small-language-container{
+  width: 300px;
+  height: 200px;
+ object-fit: contain;
+}
+
+.small-language-container2{
+  width: 100px;
+  height: 50px;
+ object-fit: contain;
+}

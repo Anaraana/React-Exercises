@@ -1,0 +1,34 @@
+.profile-container{
+    display: flex;
+    margin-top: 30px;
+    width: 300px;
+    height: 80px;
+    background-color:rgb(75, 74, 74);
+    border-radius: 15px;
+  }
+  .initial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7f2b6f;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    color: aliceblue;
+    background-image: -moz-linear-gradient(black);
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .information{
+  font-size: 7px;
+  color: lightgray;
+  margin-left: 10px;
+  
+  
+  
+  
+  }
+  .fullName{
+    color: aliceblue;
+    /* font-size: larger; */
+  }

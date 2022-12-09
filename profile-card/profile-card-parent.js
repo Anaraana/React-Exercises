@@ -1,5 +1,6 @@
 import React from "react";
 import Names from "./profile-card-child";
+import './profile-card.css'
 
 
 const name = [

@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './status-picker.css'
 
 const Status = ()=>{
     const [status, setStatus]= useState(<h2>"Status"</h2>);

@@ -1,3 +1,4 @@
+
 /* .App {
   text-align: center;
 }
@@ -36,47 +37,18 @@
     transform: rotate(360deg);
   } */
 /* } */
-.container{
-width: 300px;
-flex-wrap: wrap;
-}
-img{
-  object-fit: cover;
-  width: 200px;
-  height: 200px;
-  margin-top: 30px;
-  /* padding: 30px; */
-  border-radius: 10px;
-}
-.information1{
-font-size: 15px;
-display: flex;
-justify-content: space-between;
-  
-}
-.information2{
-  font-size: 15px;
-  
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.main{
- display: flex;
-}
-.Away{
-  background-color: yellow;
-}
-.Offline{
-  background-color: red;
-}
-.Active{
-  background-color: green;
-}
+
+
 .container{
   display: flex;
   margin-top: 30px;
   width: 300px;
   height: 80px;
-  background-color:#2f3337;
+  /* background-color:#2f3337; */
   border-radius: 15px;
 }
 .initial {
@@ -103,9 +75,8 @@ margin-left: 10px;
 }
 .fullName{
   color: aliceblue;
-  /* font-size: larger; */
 }
-.tic-tac-container{
+/* .tic-tac-container{
   display: flex;
   flex-wrap: wrap;
   width: 600px;
@@ -122,4 +93,32 @@ margin-left: 10px;
 }
 .tic-tac-button :hover{
   background-color: aliceblue;
+} */
+  .isCompleted{
+    text-decoration: line-through;
+  }
+  .notCompleted{
+    font-weight: 800;
+  }
+/* .toDoListContainer{
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 600px;
+  height: 800px;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+  background-color: rgb(234, 224, 242);
 }
+.smallContainer{
+  border: 1px solid darkgray;
+  background-color: #efe9f3;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  box-shadow: #2f3337;
+} */

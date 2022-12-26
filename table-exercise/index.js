@@ -46,9 +46,9 @@ export default function RandomDataTable() {
                 <td>{data.last_name}</td>
                 <td>{data.gender}</td>
                 <td>
-                    <div className="dob">{data.date_of_birth}
-                    </div></td>
-                
+                  <div className="dob">{data.date_of_birth}</div>
+                </td>
+
                 <td>{data.email}</td>
                 <td>{data.phone_number}</td>
                 <td>{data.username}</td>
@@ -59,14 +59,16 @@ export default function RandomDataTable() {
                   </div>
                 </td>
                 <td>
-                    <div>{data.address.street_address}</div>
-                    <span>{data.address.city}, </span>
-                    <span>{data.address.state}</span>
-                    <span>{data.address.zip_code}</span>
+                  <div>{data.address.street_address}</div>
+                  <span>{data.address.city}, </span>
+                  <span>{data.address.state}</span>
+                  <span>{data.address.zip_code}</span>
                 </td>
-                <td>
+                <td style={{width:'200px'}}>
+                  <div className="random-data-buttons">
                     <button className="edit-button">Edit</button>
                     <button className="delete-button">Delete</button>
+                  </div>
                 </td>
               </tr>
             );

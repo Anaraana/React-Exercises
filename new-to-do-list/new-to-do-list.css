@@ -20,3 +20,28 @@
     margin: 10px;
     box-shadow: #2f3337;
   } 
+  .todolist-submit-button{
+    color: blue;
+    width: 60px;
+  }
+  .todolist-edit-button{
+    color: orange;
+    width: 60px;
+    margin-top: 5px;
+  }
+  .todolist-delete-button{
+    color: red;
+    width: 60px;
+  }
+  .todolist-complete-button{
+    color: green;
+    width: 60px;
+  }
+  .todo-status-button{
+   margin-top: 10px;
+   width: 90px;
+   margin-left: 13px;
+   background-color: rgb(133, 61, 129);
+   border-radius: 5px;
+   color: #efe9f3;
+  }

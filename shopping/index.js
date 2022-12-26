@@ -23,7 +23,7 @@ const Shop = () => {
     <div className="cocktails-container">
       {drinksMargarita?.map((margarita,id)=>{
                 return <img onClick={()=>{
-                    navigate(`${margarita.idDrink}`)
+                    navigate(`${margarita.idDrin}`)
                 }} key={id} src={margarita.strDrinkThumb}/>
             })} 
 

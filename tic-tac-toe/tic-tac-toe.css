@@ -4,6 +4,7 @@
     width: 600px;
     height: 600px;
     /* background-color: darkgray */
+    margin-left: 40px;
   }
   .tic-tac-button{
     margin-top: auto;
@@ -16,6 +17,14 @@
   }
   .tic-tac-button :hover{
     background-color: aliceblue;
+  }
+  .tic-tac-restart-button{
+  color: #023e8a;  
+  margin-left: 40px;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 50px;
+  margin-top: 40px;
   }
 
   /* <!-- HTML !-->

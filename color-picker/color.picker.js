@@ -5,23 +5,41 @@ import { useState } from 'react';
 
 export default function ColorPicker (){
 
-    const [color,setColor]=useState('')
-    const colorA=()=>{}
-    const colorB=()=>{}
+    const [color,setColor]=useState({colorA:'#000000', colorB:'#FFFFFF'})
+   const onColorChange=(e)=>{
+const fieldName= e.target.name
+const fieldValue=e.target.value
+setColor((currState)=>{
+return{
+    ...currState,
+    [fieldName]:fieldValue,
+}
+})
+   }
 return (
-    <div>
-        <div>
+    <div className="color-picker-container">
+       
         <form>
-            <label>
-                <input type={'color'}></input>
-                <input type={'color'}></input>
+            <label>Color:A
+                <input type={'color'}
+                name='colorA'
+                value={color.colorA}
+                onChange={(e)=>{onColorChange(e)}}></input>
+               
             </label>
+            <label>Color:B
+                <input type={'color'}
+                name='colorB'
+                value={color.colorB}
+                onChange={(e)=>{onColorChange(e)}}></input>
+            </label>
+          
         </form>
+        <div className="color-picker" style={{height: '500px', width:"500px",backgroundImage: `linear-gradient(${color.colorA}, ${color.colorB})`}}>
+            
         </div>
-      {/* <div>
-        <button>Color A</button>
-        <button>Color B</button>
-      </div> */}
+        
+      
     </div>
 )
    

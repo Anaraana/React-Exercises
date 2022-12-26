@@ -17,7 +17,8 @@ const TicTacToe = () => {
   const [isWin, setIsWin] = useState(false);
   return (
     <div className="big-container">
-      <button
+
+      <button className="tic-tac-restart-button"
         onClick={() => {
           setIsWin(false);
           setCurrSymbol(firstSymbol);

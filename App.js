@@ -22,6 +22,15 @@ import Counter from "./counter-example/use-reducer";
 import ShoppingList from "./shopping-list";
 import HTMLTablePlayground from "./table-playground";
 import RandomDataTable from "./table-exercise";
+import ImageSlider from "./image-slider";
+import CrudApi from "./crud-api-exercise";
+
+import EmployerEdit from "./crud-api-exercise/employer-edit";
+import AppGitHub from "./component-tree";
+import ChangeColor from "./small-theme-app";
+import Kahoot from "./Kahoot";
+
+
 
 
 // import TicTacToe from './tic-tac-toe/tic-tac-toe';
@@ -65,7 +74,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route element={<PageSharedLayout />}>
+          <Route path='/' element={<PageSharedLayout />}>
             <Route path="airbnb" element={<Airbnb />}></Route>
             <Route path="tictactoe" element={<TicTacToe />}></Route>
             <Route path="todolist" element={<ToDoList />}></Route>
@@ -89,6 +98,16 @@ function App() {
             <Route path="ShoppingList" element={<ShoppingList/>}></Route>
             <Route path="HTMLTablePlayground" element={<HTMLTablePlayground/>}></Route>
             <Route path="RandomDataTable" element={<RandomDataTable/>}></Route>
+            <Route path='ImageSlider' element={<ImageSlider/>}></Route>
+            <Route path='CrudApi'>
+              <Route index element={<CrudApi/>}/>
+              <Route path=":apiId" element={<EmployerEdit/>}></Route>
+
+            </Route>
+            <Route path="employer-edit" element={<EmployerEdit/>}></Route>
+            <Route path="component-tree" element={<AppGitHub/>}></Route>
+            <Route path="small-theme-app" element={<ChangeColor/>}></Route>
+            <Route path="Kahoot" element={<Kahoot/>}></Route>
           </Route>
           {/* <Route path='/page1' element= {<Page1/>}></Route>
         <Route path='/page2' element= {<Page2/>}></Route>

@@ -132,7 +132,7 @@ const [isCompleted, setIsCompleted]=useState("all")
           ></input>
         </label>
 
-        <button style={{color:"blue"}}type="submit">{editItemIdx===-1 ?<MdSend /> : <MdOutlineSaveAlt />}
+        <button className="todolist-submit-button" type="submit">{editItemIdx===-1 ?<MdSend /> : <MdOutlineSaveAlt />}
           </button>
       </form>
       <br/>
@@ -149,7 +149,7 @@ const [isCompleted, setIsCompleted]=useState("all")
     </div>
     {["all", "completed", "inCompleted"].map((btnName) => {
             return (
-              <button
+              <button className="todo-status-button"
                 onClick={() => {
                   setIsCompleted(btnName);
                 }}
@@ -183,18 +183,18 @@ const [isCompleted, setIsCompleted]=useState("all")
               <div>{toDo.createdDated}</div>
               {/* if is in edit mode, show "cancel" button */}
               {editItemIdx === toDoIdx ? (
-                <button style={{color:"orange"}}onClick={onEditCancel}>
+                <button className="todolist-edit-button" onClick={onEditCancel}>
                   <MdOutlineCancel />
                 </button>
               ) : (
                 <div>
-                  <button  style={{color:"orange"}}onClick={() => onEdit(toDo)}>
+                  <button className="todolist-edit-button"  style={{color:"orange"}}onClick={() => onEdit(toDo)}>
                     <FaEdit />
                   </button>
-                  <button style={{color:"red"}}onClick={() => onDelete(toDo.id)}>
+                  <button className="todolist-delete-button" onClick={() => onDelete(toDo.id)}>
                     <MdDelete />
                   </button>
-                  <button style={{color:"green"}} onClick={() => onComplete(toDo.id)}>
+                  <button className="todolist-complete-button"  onClick={() => onComplete(toDo.id)}>
                     <FaRegCheckCircle />
                   </button>
                 </div>

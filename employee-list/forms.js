@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import avatar1 from "./image/avatar1.png";
-import avatar2 from "./image/avatar2.png";
-import avatar3 from "./image/avatar3.png";
-import avatar4 from "./image/avatar4.png";
-import avatar5 from "./image/avatar5.png";
-import avatar6 from "./image/avatar6.png";
-import avatar7 from "./image/avatar7.png";
-import avatar8 from "./image/avatar8.png";
+import avatar1 from "./image/avatar1 (1).png";
+import avatar2 from "./image/avatar2 (1).png";
+import avatar3 from "./image/avatar3 (1).png";
+import avatar4 from "./image/avatar4 (1).png";
+import avatar5 from "./image/avatar5 (1).png";
+import avatar6 from "./image/avatar6 (1).png";
+import avatar7 from "./image/avatar7 (1).png";
+import avatar8 from "./image/avatar8 (1).png";
 
 const images = [
   avatar1,
@@ -71,7 +71,8 @@ export function EmployeeForm({ onFormSubmit, editEmpInfo }) {
   };
 
   return (
-    <div className="form-container">
+    <div >
+      <div className="form-container">
       <form onSubmit={onSubmit}>
         <label>
           <input
@@ -139,6 +140,7 @@ export function EmployeeForm({ onFormSubmit, editEmpInfo }) {
           </button>
         </label>
       </form>
+      </div>
     </div>
   );
 }

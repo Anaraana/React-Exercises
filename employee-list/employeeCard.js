@@ -18,24 +18,25 @@ export function EmployeeCard({ employee,onEmployeeEdit,onEmployeeDelete}) {
             src={employee.picture}
             alt="avatar"
           />
-          <div className="employee-detail">
-            <div>{employee.firstName}</div>
-           <div>{employee.lastName}</div>
-           <div>{employee.role}</div>
-           <div>{employee.company}</div>
-           <div>{employee.address1}</div>
-           <div>{employee.address2}</div>
-           <div>{employee.city}</div>
-           <div>{employee.state}</div>
-           <div>{employee.zip}</div>
-           <div>{employee.phone}</div>
+          <div >
+            <div className="employee-detail"><b>{employee.firstName}</b></div>
+           <div className="employee-detail"><b>{employee.lastName}</b></div>
+           <div className="employee-detail">{employee.role}</div>
+           <div className="employee-detail">{employee.company}</div>
+           <div className="employee-detail">{employee.address1}</div>
+           <div className="employee-detail">{employee.address2}</div>
+           <div className="employee-detail">{employee.city}</div>
+           <div className="employee-detail">{employee.state}</div>
+           <div className="employee-detail">{employee.zip}</div>
+           <div className="employee-detail">{employee.phone}</div>
           </div>
-          <button  style={{color:"orange"}}onClick={() => onEmployeeEdit()}>
+          <div className="employee-card-button"><button   style={{color:"orange", backgroundColor: 'none'}}onClick={() => onEmployeeEdit()}>
                     <FaEdit />Edit
                   </button>
                   <button style={{color:"red"}}onClick={() => onEmployeeDelete()}>
                     <MdDelete />Delete
                   </button>
+                  </div>
         </div>
       </div>
      </div>

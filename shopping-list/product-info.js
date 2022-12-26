@@ -1,7 +1,13 @@
-import React from "react";
+import React,{useReducer, useContext} from "react";
 import {FaShoppingCart} from 'react-icons/fa';
-import "./index.css"
-export default function ProductInfo({movie}){
+import "./index.css";
+import { MoviesContext } from ".";
+
+
+
+export default function ProductInfo({movie,}){
+    const {movies,updateCart}=useContext(MoviesContext)
+   
 return(
     <div className="best-buy-shopping-list">
             <div className="best-buy-picture">
@@ -26,7 +32,7 @@ return(
                     <span>${movie.salePrice}</span>
                 </div> */}
         
-                    <button className="shopping-btn" onClick={(()=>{})}><FaShoppingCart/>Add to Cart</button>
+                    <button className="shopping-btn" onClick={()=>{updateCart({type:'add', data:{sku:movie.sku, name:movie.name,thumbnailImage:movie.thumbnailImage}})}}><FaShoppingCart/>Add to Cart</button>
                 
             </div>
         </div>

@@ -1,0 +1,130 @@
+.kahoot-container{
+    width: 100rem;
+    height: 70rem;
+    position: absolute;
+    background-image: url('https://images-cdn.kahoot.it/acf73135-050e-4126-b172-d0dbb436012e?auto=webp?auto=webp&width=1800');
+margin: 30px;
+}
+.kahoot-guestions{
+    height: 10rem;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+.kahoot-one-answer{
+    background-color:blue;
+    width: 15rem;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    
+   
+  
+}
+.kahoot-answers{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+    overflow: visible;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    width: calc(50% - 3rem);
+    padding: 0.3125rem;
+    margin-top: 310px;
+   
+
+   
+}
+.bg-0{
+    background-color: red;
+    width: 775px;
+    height: 150px;
+    box-shadow: rgb(0 0 0 / 20%) 0px -6px 0px 0px inset;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+   
+}
+.bg-1{
+    background-color:blue;
+    width: 775px;
+    height: 150px;
+    box-shadow: rgb(0 0 0 / 20%) 0px -6px 0px 0px inset;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    
+    
+}
+.bg-2{
+    background-color: rgb(249, 157, 10);
+    width: 775px;
+    height: 150px;
+    box-shadow: rgb(0 0 0 / 20%) 0px -6px 0px 0px inset;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+.bg-3{
+    background-color: green;
+    width: 775px;
+    height: 150px;
+    box-shadow: rgb(0 0 0 / 20%) 0px -6px 0px 0px inset;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.kahoot-result{
+    margin: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    /* position: relative; */
+    z-index: 3;
+    /* display: flex; */
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1rem;
+    height: 6rem;
+    color: rgb(255, 255, 255);
+}
+.kahoot-button-container{
+    margin-top: 10px;
+}
+.kahoot-next-button{
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: bottom;
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 4px, rgb(0 0 0 / 25%) 0px -4px inset;
+    background: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    min-width: 42px;
+    min-height: 42px;
+    padding: 0px 16px 4px;
+    position: relative;
+    font-family: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

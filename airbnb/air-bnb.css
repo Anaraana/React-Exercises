@@ -1,11 +1,11 @@
 .main{
   display: flex;
-
-  
+  margin-right: 20px;
  }
 .airbnb-container{
 width: 300px;
 flex-wrap: wrap;
+margin-left: 40px;
 margin-right: 30px;
 }
 img{
@@ -14,6 +14,7 @@ img{
   height: 300px;
   margin-top: 30px;
   border-radius: 10px;
+
 }
 .information1{
 font-size: 15px;
